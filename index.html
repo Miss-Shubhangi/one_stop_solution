@@ -68,7 +68,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./img/logo.png" alt="Logo" class="img-fluid" style="height: 70px; width: auto;">
+        <img src="./img/places-logo.png" alt="Logo" class="img-fluid" style="height: 70px; width: auto;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -367,7 +367,7 @@
   </div>
 <!--Services-->
   <div class=" py-3 text-center display-5 text-warning-emphasis text-decoration-underline">Our Services...!</div>
-  <div class="d-flex flex-md-column flex-sm-column flex-lg-row flex-wrap text-center justify-content-around">
+  <div class="d-flex flex-md-column flex-sm-column flex-lg-row flex-wrap text-center justify-content-around mb-4">
     <div class="card" style="width: 14rem;">
       <i class="bi bi-journal-check"></i>
       <div class="card-body">
@@ -402,34 +402,40 @@
   </div>
 
 <!-- footer -->
-  <div class="row mt-5 pt-3 w-100 bg-dark text-light" >
-    <div class="col col-md-6 col-sm-12 col-lg-4 justify-content-center">
-       <img src="logo.png"  class="img-fluid ms-2 mt-2 "/>
-    </div>
-    <div class="col col-md-6 col-sm-12 col-lg-4 justify-content-center">
-       <h5> Spot Locations</h5>
-       <ul type="none">
-        <li>Lonavala</li>
-        <li>Nashik</li>
-        <li>Ratnagiri</li>
-        <li>Pune</li>
-        <li>Alibaug</li>
-        <li>Harihareshwar</li>
-       </ul>
-    </div>
-    <div class="col col-md-12 col-sm-12 col-lg-4 justify-content-center">
-       <p>
-        Email: contact@travelhub.com
-       </p>
-       <p>
-        WhatsApp: +91-9876543210
-       </p>
-       <p>
-        Location: Mumbai, India
-       </p>
-    </div>
-  </div> 
+  
 
+  <footer class=" text-dark pt-4 pb-3" style="background-color: #f2f2f2;">
+    <div class="container">
+      <div class="row text-center text-lg-start">
+        <!-- Logo Section -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-center">
+          <img src="./img/places-logo.png" style="height: 100px; width:220px;" class="img-fluid" alt="logo">
+        </div>
+  
+        <!-- Locations Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Spot Locations</h5>
+          <ul class="list-unstyled">
+            <li>Lonavala</li>
+            <li>Nashik</li>
+            <li>Ratnagiri</li>
+            <li>Pune</li>
+            <li>Alibaug</li>
+            <li>Harihareshwar</li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info Section -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="mb-3">Contact</h5>
+          <p>Email: contact@travelhub.com</p>
+          <p>WhatsApp: +91-9876543210</p>
+          <p>Location: Mumbai, India</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
   <script>
     function showTable(type){
        const Villa = document.getElementById('villa');
