@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One Stop Solution</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <style>
+    
+    .hero-section-img {
+      width: 100%;
+      opacity: 0.8;
+       height:550px;
+    }
+    .hero-content-villa{
+      position: absolute;
+      top: 30%;
+      left: 5%;
+      color: black;
+    }
+    .hero-content-resort{
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      color:white;
+    }
+    .hero-content-camping{
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      color:white;
+    }
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+    .package-tab{
+      color:#664d03;
+
+
+    }
+    .package-tab:hover{
+      color:  #ad8305;
+    }
+    .package-tab:active{
+      color:#ad8305;
+      border:1px solid #ad8305;
+    }
+    .border-warning-emphasis{
+      border-color:  #ad8305 !important;
+    }
+    @media (max-width: 430px) {
+      .hero-content h2 {
+        font-size: 1.2rem;
+      }
+      .hero-content p {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" alt="Logo" class="img-fluid" style="height: 70px; width: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">PRODUCT</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="#">SERVICES</a></li>
+          <li class="nav-item" style="cursor: pointer;"><a class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#login">LOGIN</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--hero section-->
+  <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active " ata-bs-interval="9000">
+        <div class="position-relative">
+          <img src="./img/my.jpg" class="hero-section-img " alt="Hero Image">
+          <div class=" hero-content hero-content-villa">
+            <h2>Your Private Paradise</h2>
+            <p> Relax in elegance with spacious villas designed for ultimate privacy and style. </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" ata-bs-interval="9000">
+        <div class="position-relative">
+     <img src="./img/camping.jpeg" class="hero-section-img" alt="Hero Image">
+     <div class="hero-content hero-content-camping">
+       <h2>Adventure Awaits</h2>
+       <p>Reconnect with nature under the stars – experience the wild like never before.</p>
+     </div>
+   </div>
+       </div>
+      <div class="carousel-item" ata-bs-interval="10000">
+        <div class="position-relative">
+          <img src="./img/resort.jpeg" class="hero-section-img" alt="Hero Image">
+          <div class="hero-content hero-content-resort">
+            <h2>Escape to Luxury</h2>
+            <p>Indulge in serene comfort with world-class amenities <br/> and breathtaking views.</p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+ 
+  <!--cards-->
+   <div class=" py-3 text-center display-5 text-warning-emphasis  text-decoration-underline">What We Offer...!</div>
+  <div class="container my-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-3 col-sm-12">
+        <div class="card h-100 shadow-sm ">
+          <div class="card-body">
+            <h5 class="card-title fs-3">🏡 Villa</h5>
+            <p class="card-text fs-5">Private and luxurious standalone home with modern amenities and scenic views.</p>
+            <ul class="text-muted fs-6">
+              <li>Private pool</li>
+              <li>Full kitchen</li>
+              <li>Spacious interiors</li>
+              <li>Ideal for extended stays</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 col-sm-12">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fs-3">🏖️ Resort</h5>
+            <p class="card-text fs-5">All-in-one destination offering relaxation, dining, and entertainment.</p>
+            <ul class="text-muted fs-6">
+              <li>On-site dining & spa</li>
+              <li>Beach or mountain views</li>
+              <li>Activities & entertainment</li>
+              <li>Perfect for vacations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-12">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fs-3">⛺ Camping</h5>
+            <p class="card-text fs-5">Back-to-nature experience in tents or eco-lodges for adventurers and explorers.</p>
+            <ul class="text-muted fs-6">
+              <li>Campfires & stargazing</li>
+              <li>Hiking & outdoor fun</li>
+              <li>Budget-friendly</li>
+              <li>Eco-friendly stays</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 col-sm-12">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fs-3">🌾 Farmhouse</h5>
+            <p class="card-text fs-5">Rustic and peaceful rural retreat surrounded by nature and greenery.</p>
+            <ul class="text-muted fs-6">
+              <li>Fresh air & countryside views</li>
+              <li>Organic meals</li>
+              <li>Pet & family-friendly</li>
+              <li>Ideal for nature lovers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!--About Us -->
+<div class=" py-3 text-center display-5 text-warning-emphasis text-decoration-underline">About Us...!</div>
+<div class="container">
+ <h3  > Your One-Stop Destination for Getaways</h3>
+    <p  class="ms-4 ps-5 border-start border-warning-emphasis border-5 ">
+      We bring together the best of resorts, villas, and camping experiences – all in one place. Whether you're looking for a luxury escape, a nature retreat, or a cozy villa, we’ve got you covered with affordable and top-rated options.
+
+      <br><br> At SP Share Wibes, we believe that everyone deserves a memorable travel experience — without the hassle of searching multiple platforms. That’s why we’ve created a seamless destination where you can explore, compare, and book your perfect getaway in minutes.
+      
+      <br><br> From beachfront resorts and mountain-view villas to serene forest campsites, we handpick each location to ensure comfort, safety, and a touch of magic. Our curated packages are designed for couples, families, solo travelers, and groups — all tailored to different budgets and preferences.
+      
+      <br><br> With transparent pricing, real reviews, and 24/7 support, we aim to make your travel planning not just easy, but enjoyable.
+    </p>
+</div>
+<!--Top Packages-->
+<div class=" py-3 text-center display-5 text-warning-emphasis text-decoration-underline">Top & Affordable Packages ...!</div>
+  <div class="container">
+    <nav id="package-tabs" class="navbar  justify-content-center">
+      <ul class="nav fs-3">
+        <li class="nav-item">
+          <a class="nav-link package-tab" onclick="showTable('villa')">Villa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link package-tab" onclick="showTable('resort')">Resort</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link package-tab" onclick="showTable('camping')">Camping</a>
+        </li>
+        
+      </ul>
+    </nav>
+    <div >
+     
+      <div class="table-responsive"  id="villa">
+      <table class="table caption-top table-hover"  >
+        <caption>Villa</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Price (Starting)</th>
+            <th scope="col">Special Offer</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Skyline Villa</th>
+            <td>Pune (Mulshi)</td>
+            <td>₹3,999 / night</td>
+            <td>Ideal for couples & families</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Greenwood Villa</th>
+            <td> Lonavala</td>
+            <td>  ₹4,499 / night</td>
+            <td>BBQ equipment included</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Coastal Breeze Villa</th>
+            <td>Kokan (Alibaug)</td>
+            <td> ₹2,299 / night</td>
+            <td> Pet-friendly</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      
+      <div class="table-responsive" style="display: none;" id="resort">
+      <table class="table table-hover caption-top" >
+       <caption>Resort</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Price (Starting)</th>
+            <th scope="col">Special Offer</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Sula Valley Resort</th>
+            <td>Nashik</td>
+            <td>₹3,499 / night</td>
+            <td>Free wine tasting on weekends</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Lakefront Bliss Resort</th>
+            <td> Lonavala</td>
+            <td> ₹2,899 / night</td>
+            <td>Kayaking available</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+          <tr>
+            <th scope="row">SeaShell Resort</th>
+            <td>Kokan (Ratnagiri)</td>
+            <td>₹1,799 / night</td>
+            <td> Beach access</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      
+      <div class="table-responsive" style="display: none;" id="camping">
+      <table class="table table-hover caption-top" >
+        <caption>Camping</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Price (Starting)</th>
+            <th scope="col">Special Offer</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Pawna Lakeside Camping</th>
+            <td> Lonavala</td>
+            <td>₹1,299 / night</td>
+            <td>Boating available</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Bhandardara Forest Camp</th>
+            <td>  Nashik</td>
+            <td>₹1,199 / night</td>
+            <td>Stargazing night included</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Beachside Camping</th>
+            <td> Kokan (Harihareshwar)</td>
+            <td>₹999 / night</td>
+            <td> Beach walk in morning</td>
+            <td><a class="btn btn-primary" href="#" role="button">Book Now</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </div>
+<!--Services-->
+  <div class=" py-3 text-center display-5 text-warning-emphasis text-decoration-underline">Our Services...!</div>
+  <div class="d-flex flex-md-column flex-sm-column flex-lg-row flex-wrap text-center justify-content-around">
+    <div class="card" style="width: 14rem;">
+      <i class="bi bi-journal-check"></i>
+      <div class="card-body">
+        <h5 class="card-title">Easy Booking</h5>
+      </div>
+    </div>
+      <div class="card" style="width: 14rem;">
+        <i class="bi bi-currency-rupee"></i>
+        <div class="card-body">
+          <h5 class="card-title">Group Discounts</h5>
+        </div>
+      </div>
+        <div class="card" style="width: 14rem;">
+          <i class="bi bi-calendar2-check"></i>
+          <div class="card-body">
+            <h5 class="card-title">Custom Itineraries</h5>
+          </div>
+        </div>
+          <div class="card" style="width: 14rem;">
+            <i class="bi bi-clock"></i>
+            <div class="card-body">
+              <h5 class="card-title">24/7 Customer Support</h5>
+            </div>
+          </div>
+            <div class="card" style="width: 14rem;">
+              <i class="bi bi-car-front"></i>
+              <div class="card-body">
+                <h5 class="card-title">Transportation Help</h5>
+              </div>
+            </div>
+    
+  </div>
+
+<!-- footer -->
+  <div class="row mt-5 pt-3 w-100 bg-dark text-light" >
+    <div class="col col-md-6 col-sm-12 col-lg-4 justify-content-center">
+       <img src="logo.png"  class="img-fluid ms-2 mt-2 "/>
+    </div>
+    <div class="col col-md-6 col-sm-12 col-lg-4 justify-content-center">
+       <h5> Spot Locations</h5>
+       <ul type="none">
+        <li>Lonavala</li>
+        <li>Nashik</li>
+        <li>Ratnagiri</li>
+        <li>Pune</li>
+        <li>Alibaug</li>
+        <li>Harihareshwar</li>
+       </ul>
+    </div>
+    <div class="col col-md-12 col-sm-12 col-lg-4 justify-content-center">
+       <p>
+        Email: contact@travelhub.com
+       </p>
+       <p>
+        WhatsApp: +91-9876543210
+       </p>
+       <p>
+        Location: Mumbai, India
+       </p>
+    </div>
+  </div> 
+
+  <script>
+    function showTable(type){
+       const Villa = document.getElementById('villa');
+       const Resort = document.getElementById('resort');
+       const Camping = document.getElementById('camping');
+      
+       if(type=='villa'){
+        Villa.style.display='block';
+        Resort.style.display='none';
+        Camping.style.display='none';
+        Vill.classList.add='active'
+
+       }
+       else if( type=='resort'){
+        Villa.style.display='none';
+        Resort.classList.add='active'
+        Resort.style.display='block';
+        Camping.style.display='none';
+       }
+       else{
+        Villa.style.display='none';
+        Resort.style.display='none';
+        Camping.style.display='block';
+        Camping.classList.add='active'
+       }
+       
+    }
+  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+</body>
+</html>
